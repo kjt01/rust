@@ -196,7 +196,7 @@ top_level_options!(
         cli_forced_local_thinlto_off: bool [UNTRACKED],
 
         /// Remap source path prefixes in all output (messages, object files, debug, etc.).
-        remap_path_prefix: Vec<(PathBuf, PathBuf)> [TRACKED_NO_CRATE_HASH],
+        remap_path_prefix: Vec<(PathBuf, PathBuf)> [UNTRACKED],
         /// Base directory containing the `src/` for the Rust standard library, and
         /// potentially `rustc` as well, if we can find it. Right now it's always
         /// `$sysroot/lib/rustlib/src/rust` (i.e. the `rustup` `rust-src` component).
